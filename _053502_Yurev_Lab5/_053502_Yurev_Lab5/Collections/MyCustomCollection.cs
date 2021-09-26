@@ -6,75 +6,56 @@ namespace _053502_Yurev_Lab5.Collections
     class Node<T>
     {
         public T _item;
-        public Node<T> _next;
-        public Node<T> _prev;
+        public Node<T> Next;
+        public Node<T> Prev;
 
         public Node(T item)
         {
             _item = item;
-            _next = null;
-            _prev = null;
-        }
+            Next = null;
+            Prev = null;
+        } 
+        
         public Node()
         {
             _item = default(T);
-            _next = null;
-            _prev = null;
+            Next = null;
+            Prev = null;
         }
     }
 
      class MyCustomCollection<T>: Node<T>, ICustomCollection<T>
     {
         Node<T> _head = new Node<T>();
-        Node<T> _current = new Node<T>();
-        int _count = 0;
+        Node<T> _cursor = new Node<T>();
+        int count = 0;
 
         public T this[int index] 
         {
             get
             {
-                /*
-                if(index > amount - 1)
-                {
-                    Console.WriteLine("No such element exists.");
-                    return default;
-                }
-                else
-                {
-                    Node<T> help = new Node<T>();
-                    help = first;
-                    int counter = 0;
-                    while(counter != index)
-                    {
-                        help = help.next;
-                        counter++;
-                    }
-                    return help.val;
-                }
-                */
                 try
                 {
-                    Node<T> help = new Node<T>();
-                    help = _head;
+                    Node<T> temp = new Node<T>();
+                    temp = _head;
                     int counter = 0;
                     while (counter != index)
                     {
-                        help = help._next;
+                        temp = temp.Next;
                         counter++;
                     }
-                    return help._item;
+                    return temp._item;
                 }
                 catch(IndexOutOfRangeException)
                 {
                     Console.WriteLine("No such element exists.");
                     return default;
                 }
-
-
             }
+            
             set
             {
-                if (index > _count - 1)
+                if (index > count - 1)
                 {
                     Console.WriteLine("No such element exists.");
                 }
@@ -85,7 +66,7 @@ namespace _053502_Yurev_Lab5.Collections
                     help = _head;
                     while (counter != index)
                     {
-                        help = help._next;
+                        help = help.Next;
                         counter++;
                     }
                     help._item = value;
@@ -95,124 +76,117 @@ namespace _053502_Yurev_Lab5.Collections
 
         public void Reset()
         {
-            if(_count == 0)
+            if(count == 0)
             {
-                Console.WriteLine("Collection is empty.");
                 return;
             }
-            _current = _head;
+            
+            _cursor = _head;
         }
 
         public void Next()
         {
-            if (_count == 0)
+            if (count == 0)
             {
-                Console.WriteLine("Collection is empty.");
                 return;
             }
-            if (_current._next != null)
+            
+            if (_cursor.Next != null)
             {
-                _current = _current._next;
-            }
-            else
-            {
-                Console.WriteLine("This is the last element.");
+                _cursor = _cursor.Next;
             }
         }
 
         public T Current()
         {
-            if (_count == 0)
+            if (count == 0)
             {
-                Console.WriteLine("Collection is empty.");
                 return default;
             }
-            return _current._item;
+            return _cursor._item;
         }
+        
         public int Count 
         { 
             get
             {
-                return _count;
+                return count;
             }
         }
 
         public void Add(T item)
         {       
-            if (_count == 0)
+            if (count == 0)
             {
                 _head._item = item;
-                _current = _head;
-                _count++;
+                _cursor = _head;
+                count++;
                 return;
             }
             else
             {
-                Node<T> help = new Node<T>(item);
-                Node<T> helpcurr = _head;
-                while (helpcurr._next != null)
+                Node<T> temp = new Node<T>(item);
+                Node<T> reserve = _head;
+                while (reserve.Next != null)
                 {
-                    helpcurr = helpcurr._next;
+                    reserve = reserve.Next;
                 }
-                help._prev = helpcurr;
-                helpcurr._next = help;
-                _count++;
+                temp.Prev = reserve;
+                reserve.Next = temp;
+                count++;
             }
         }
 
         public void Remove(T item)
         {
-
             try
             {
-                if (_count == 0)
+                if (count == 0)
                 {
                     Console.WriteLine("Collection is empty.");
                     return;
                 }
 
                 Node<T> help = _head;
-                while (!(help._item.Equals(item)) && help._next != null)
+                while (!(help._item.Equals(item)) && help.Next != null)
                 {
-                    help = help._next;
+                    help = help.Next;
                 }
-                if (!(help._item.Equals(item)) && help._next == null)
+                if (!(help._item.Equals(item)) && help.Next == null)
                 {
                     throw new Exception("No such element exists.");
-                    //Console.WriteLine("No such element exists.");
-                    //return;
                 }
 
                 if (help.Equals(_head))
                 {
-                    if (_count == 1)
+                    if (count == 1)
                     {
                         _head._item = default;
-                        _current._item = default;
-                        _count--;
+                        _cursor._item = default;
+                        count--;
                         return;
                     }
                     else
                     {
-                        (_head._next)._prev = null;
-                        _head = _head._next;
-                        _current = _head;
-                        _count--;
+                        (_head.Next).Prev = null;
+                        _head = _head.Next;
+                        _cursor = _head;
+                        count--;
                         return;
                     }
                 }
                 else
                 {
-                    if (help._prev != null)
+                    if (help.Prev != null)
                     {
-                        (help._prev)._next = help._next;
+                        (help.Prev).Next = help.Next;
                     }
-                    if (help._next != null)
+                    if (help.Next != null)
                     {
-                        (help._next)._prev = help._prev;
+                        (help.Next).Prev = help.Prev;
                     }
-                    _current = _head;
-                    _count--;
+                    _cursor = _head;
+                    count--;
                     return;
                 }
             }
@@ -224,44 +198,43 @@ namespace _053502_Yurev_Lab5.Collections
 
         public T RemoveCurrent()
         {
-            if (_count == 0)
+            if (count == 0)
             {
                 Console.WriteLine("Collection is empty.");
                 return default;
             }
 
-            if (_current.Equals(_head))
+            if (_cursor.Equals(_head))
             {
-                if (_count == 1)
+                if (count == 1)
                 {
                     _head._item = default;
-                    _current._item = default;
-                    _count--;
+                    _cursor._item = default;
+                    count--;
                     return default;
                 }
                 else
                 {
-                    _head = _head._next;
-                    _current = _head;
-                    _count--;
+                    _head = _head.Next;
+                    _cursor = _head;
+                    count--;
                     return default;
                 }
             }
             else
             {
-                if (_current._prev != null)
+                if (_cursor.Prev != null)
                 {
-                    (_current._prev)._next = _current._next;
+                    (_cursor.Prev).Next = _cursor.Next;
                 }
-                if (_current._next != null)
+                if (_cursor.Next != null)
                 {
-                    (_current._next)._prev = _current._prev;
+                    (_cursor.Next).Prev = _cursor.Prev;
                 }
-                _current = _head;
-                _count--;
+                _cursor = _head;
+                count--;
                 return default;
             }
-
         }
     }
 }
