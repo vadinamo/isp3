@@ -1,0 +1,15 @@
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/bin/Debug/net5.0/_053502_Yurev_Lab7.deps.json
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/bin/Debug/net5.0/_053502_Yurev_Lab7.runtimeconfig.json
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/bin/Debug/net5.0/_053502_Yurev_Lab7.runtimeconfig.dev.json
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/bin/Debug/net5.0/_053502_Yurev_Lab7.dll
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/bin/Debug/net5.0/ref/_053502_Yurev_Lab7.dll
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/bin/Debug/net5.0/_053502_Yurev_Lab7.pdb
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/obj/Debug/net5.0/_053502_Yurev_Lab7.csproj.AssemblyReference.cache
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/obj/Debug/net5.0/_053502_Yurev_Lab7.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/obj/Debug/net5.0/_053502_Yurev_Lab7.AssemblyInfoInputs.cache
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/obj/Debug/net5.0/_053502_Yurev_Lab7.AssemblyInfo.cs
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/obj/Debug/net5.0/_053502_Yurev_Lab7.csproj.CoreCompileInputs.cache
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/obj/Debug/net5.0/_053502_Yurev_Lab7.dll
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/obj/Debug/net5.0/ref/_053502_Yurev_Lab7.dll
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/obj/Debug/net5.0/_053502_Yurev_Lab7.pdb
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab7/_053502_Yurev_Lab7/obj/Debug/net5.0/_053502_Yurev_Lab7.genruntimeconfig.cache
