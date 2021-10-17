@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "_053502_Yurev_Lab6/1.0.0": {
+        "runtime": {
+          "_053502_Yurev_Lab6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "_053502_Yurev_Lab6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
