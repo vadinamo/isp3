@@ -1,0 +1,12 @@
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/bin/Debug/net5.0/PassengerLib.deps.json
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/bin/Debug/net5.0/PassengerLib.dll
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/bin/Debug/net5.0/ref/PassengerLib.dll
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/bin/Debug/net5.0/PassengerLib.pdb
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/obj/Debug/net5.0/PassengerLib.csproj.AssemblyReference.cache
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/obj/Debug/net5.0/PassengerLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/obj/Debug/net5.0/PassengerLib.AssemblyInfoInputs.cache
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/obj/Debug/net5.0/PassengerLib.AssemblyInfo.cs
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/obj/Debug/net5.0/PassengerLib.csproj.CoreCompileInputs.cache
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/obj/Debug/net5.0/PassengerLib.dll
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/obj/Debug/net5.0/ref/PassengerLib.dll
+/Users/vadinamo/Documents/исп/_053502_Yurev_Lab11Task2/PassengerLib/obj/Debug/net5.0/PassengerLib.pdb
